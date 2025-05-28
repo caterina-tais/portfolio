@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Caterina de Franchis">
+  <link rel="icon" type="image/png" href="media/favicon.png">
+  <title>Portfolio - Caterina de Franchis</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <img src="media/avatar.png" alt="Caterina de Franchis" class="profile-img">
+        <div class="header-text">
+          <h1 class="name">Caterina de Franchis</h1>
+          <p class="role">Estudiante en la EPET 12</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>Soy estudiante de programación en la EPET 12, me gusta el desarrollo de software y aprender.</p>
+    </div>
+  </section>
+
+  <section class="skills">
+  <div class="container">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Python</div>
+    </div>
+  </div>
+</section>
+
+  <section class="projects">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div id="project-cards" class="project-cards">
+        <!-- Primera tarjeta -->
+        <div class="project-card">
+        <img src="./media/logo-nasa.png" alt="Proyecto 1">
+        <div class="project-info">
+            <h3>Nasa App</h3>
+            <p></p>
+            <a href="media/qr-nasa.png" class="btn" id="open-image">Probar</a>
+        </div>
+        </div>
+        <div class="project-card">
+        <img src="./media/pomodoro.png" alt="Proyecto 2">
+        <div class="project-info">
+            <h3>Pomodoro App</h3>
+            <p></p>
+            <a href="media\qr-pomodoro.svg" class="btn" id="open-image">Probar</a>
+        </div>
+        </div>
+        <div class="project-card">
+        <img src="media\helados.jpg" alt="Proyecto 3">
+        <div class="project-info">
+            <h3>Web Helados</h3>
+            <p></p>
+            <a href="https://github.com/caterina-tais/Web-Helados.git" class="btn" id="open-image-2">Ver en GitHub</a>
+        </div>
+        </div>
+
+        <!-- Tercera tarjeta -->
+        <div class="project-card">
+        <img src="media\cafe.avif" alt="Proyecto 4">
+        <div class="project-info">
+            <h3>Proyecto Final Curso</h3>
+            <p></p>
+            <a href="https://github.com/joacoglsk/Proyecto-Final-Curso.git" class="btn" id="open-image-3">Ver en GitHub</a>
+        </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div id="image-modal" class="modal">
+        <span class="close" id="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+        </div>
+
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Contacto: <a href="mailto:caterinadefranchis@epet12smandes.edu.ar">caterinadefranchis@epet12smandes.edu.ar</a></p>
+    </div>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

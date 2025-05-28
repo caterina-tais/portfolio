@@ -1,0 +1,317 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe4e1; /* Fondo suave rosa claro */
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #f06292; /* Rosa fuerte */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.header .header-text {
+  text-align: left;
+}
+
+.header .name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.header .role {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-style: italic;
+  color: #f8bbd0; /* Rosa claro */
+}
+
+/* About Section */
+.about {
+  padding: 60px 0;
+  background-color: #f8bbd0; /* Rosa suave */
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #d81b60; /* Rosa fuerte */
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #5c5c5c; /* Gris oscuro para mejorar visibilidad */
+  line-height: 1.8;
+}
+
+/* Projects Section */
+.projects {
+  padding: 80px 0;
+  background-color: #fce4ec; /* Rosa pálido */
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #d81b60; /* Rosa fuerte */
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #f48fb1; /* Rosa intermedio */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(244, 143, 177, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffffff; /* Blanco para destacar los títulos */
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #ffffff; /* Blanco para el texto */
+  line-height: 1.6;
+}
+
+.project-info .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #f1a7c1; /* Rosa suave */
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-info .btn:hover {
+  background-color: #f06292; /* Rosa fuerte */
+}
+
+/* Footer */
+.footer {
+  background-color: #d81b60; /* Rosa fuerte */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+.skills {
+  padding: 60px 0;
+  background-color: #ffefff;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #d81b60;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.skill-card {
+  background-color: #f8bbd0;
+  color: #4a0033;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 15px rgba(216, 27, 96, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.header {
+  background-image: url("../media/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* oscurece un poco la imagen para que el texto se lea mejor */
+  z-index: 1;
+}
+
+.header .header-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animación de entrada para la sección "Sobre mí" */
+.about {
+  padding: 60px 0;
+  background-color: #ffe0f0;
+  text-align: center;
+  animation: fadeSlideIn 1.5s ease-out;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #d81b60;
+  animation: popIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #6b004e;
+  line-height: 1.8;
+  animation: fadeIn 2s ease-out forwards;
+  opacity: 0;
+}
+
+/* Keyframes */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: linear-gradient(90deg, #ff66b2, #ff99cc, #ff66b2);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite, zoomIn 1.2s ease-out forwards;
+  opacity: 0;
+  text-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+}
+
+/* Animación de fondo en movimiento */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Zoom de entrada */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
